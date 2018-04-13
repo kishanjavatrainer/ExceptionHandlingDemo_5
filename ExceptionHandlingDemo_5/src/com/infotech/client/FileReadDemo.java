@@ -14,8 +14,8 @@ public class FileReadDemo {
 	   while  ((readLine = br.readLine()) != null) {
 		   System.out.println(readLine);
 	}
-	  }catch(IOException ioExp){
-	   System.out.println("Error while reading file " + ioExp.getMessage());
+	  }catch(IOException ex){
+	   System.out.println("Error while reading file " + ex.getMessage());
 	  }finally {
 	   try {
 	    // Close the stream

@@ -10,12 +10,13 @@ public class FinallyDemo2 {
 	static int getValue() {
 		try {
 			System.out.println("In try block");
-			throw new NullPointerException();
-		} catch (NullPointerException nExp) {
-			System.out.println("Exception caught in catch block of displayValue");
+			throw new RuntimeException();
+		} catch (RuntimeException nExp) {
+			System.out.println("Exception caught in catch block of getValue");
 			return 20;
 		} finally {
 			System.out.println("In finally block");
+			//return 30;
 		}
 	}
 
